@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "fonts.css";
+:root {
+    --dark-primary: #100e17;
+    --dark-secondary: #202026;
+    --turquoise-primary: #4ABDAC;
+}
+
+body {
+    background-color: var(--dark-primary);
+    font-family: 'Inconsolata-Regular';
+}
