@@ -22,7 +22,6 @@ nav .navbar-options {
     background: var(--dark-secondary);
     justify-content: space-around;
     display: flex;
-    flex-wrap: wrap;
     transition: height 0.7s ease-in-out;
 }
 
@@ -69,6 +68,7 @@ a fa-icon {
         width: 100%;
         position: fixed;
         top: 50px;
+        flex-wrap: wrap;
     }
     .navbar-options.no-show-mobile {
         height: 0%!important;
@@ -109,6 +109,7 @@ a fa-icon {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    margin-right: 20px;
 }
 
 .navbar-header .menu-icon .navicon {

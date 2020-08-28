@@ -1,6 +1,6 @@
 {
-    "Presentation": "Presentación",
     "AboutMe": "Acerca de mí",
+    "Presentation": "Presentación",
     "WhatIDo": "Lo que hago",
     "Skills": "Habilidades",
     "Experience": "Experiencia",
@@ -8,6 +8,7 @@
     "Contact": "Contacto",
     "Im": "Hola, soy",
     "WebDeveloper": "Desarrolladora Web",
-    "AboutMe": "Acerca de mí",
-    "AboutMeText": "Soy Licenciada en computación, me he dedicado principalmente al desarrollo de aplicaciones web, participando en etapas de análisis del proyecto, implementación de la base de datos, desarrollo del backend y desarrollo del frontend con tecnologías actuales y siguiendo las buenas prácticas que cada lenguaje posee. Me considero una persona capaz de afrontar nuevos retos, de aprender nuevas tecnologías y de integrarme paralograr un trabajo en equipo productivo"
+    "AboutMeText2": "Soy Licenciada en computación, me dedico al desarrollo y personalización de aplicaciones web con tecnologías actuales. Soy una persona con ganas de aprender nuevas cosas cada día para enfrentar nuevos retos en el mundo de la programación. Estos son algunos de los lenguajes con los que he trabajado:",
+    "AboutMeText": "Soy Licenciada en computación, me dedico al desarrollo y personalización de aplicaciones web con tecnologías actuales. Estos son algunos de los lenguajes con los que he trabajado:",
+    "DownloadCV": "Descargar CV"
 }

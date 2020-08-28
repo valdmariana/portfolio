@@ -5,22 +5,76 @@
     --dark-primary: #100e17;
     --dark-secondary: #202026;
     --color-primary: #4ABDAC;
-    /* --color-primary: #F58053; Naranja*/
-    /* --color-primary: #E37222; Naranja */
-    /* --color-primary: #07889B; Teal */
+    --color-secondary: #ec4c5c;
+    /* --color-secondary: #F58053; Naranja*/
+    /* --color-secondary: #E37222; Naranja */
+    /* --color-secondary: #07889B; Teal */
     /* --color-primary: #3E979B;Turquesa */
 }
 
 body {
     background-color: var(--dark-primary);
-    font-family: 'Roboto-Regular';
+    font-family: 'Inconsolata-Regular';
     color: #fff;
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inconsolata-Bold';
+@media (min-width:768px) {
+    .content {
+        margin-left: 80px;
+    }
+}
+
+/* Texts */
+
+h1, h2, h3 {
+    font-family: 'Roboto-Bold';
+}
+
+h4, h5, h6 {
+    font-family: 'Roboto-Regular';
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    h1, h2 {
+        font-size: calc(1.3em + 1.3vw);
+    }
+    h3, h4 {
+        font-size: calc(1.0em + 1.0vw);
+    }
+    h5, h6 {
+        font-size: calc(0.8em + 0.8vw);
+    }
+    p {
+        font-size: calc(0.6em + 0.6vw);
+    }
+}
+
+/* Buttons */
+
+.btn-main {
+    color: #fff;
+    font-weight: bold;
+    /* background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); */
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
+    border-radius: 20px;
 }

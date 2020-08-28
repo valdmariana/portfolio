@@ -7,12 +7,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFound404Component } from './components/not-found404/not-found404.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [FooterComponent, HeaderComponent, NotFound404Component],
   imports: [
     CommonModule,
     FontAwesomeModule,
+    RouterModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -25,7 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   exports: [
     TranslateModule,
     FontAwesomeModule,
-    HeaderComponent
+    HeaderComponent,
+    RouterModule
   ]
 })
 export class SharedModule { }

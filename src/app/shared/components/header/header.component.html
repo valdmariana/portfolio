@@ -5,7 +5,7 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         </div>
         <div class="navbar-options" [ngClass]="{'show-mobile':showMobile,'no-show-mobile':!showMobile}">
-            <a [href]="item.route" class="position-relative" *ngFor="let item of menuItems"
+            <a [routerLink]="item.route" class="position-relative" *ngFor="let item of menuItems"
                 [ngClass]="{'show-item':showItem,'no-show-item':!showItem}">
                 <fa-icon [icon]="item.icon"></fa-icon>
                 <div class="position-absolute text-nav text-center w-100">

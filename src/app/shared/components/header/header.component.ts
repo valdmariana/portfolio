@@ -28,12 +28,12 @@ export class HeaderComponent implements OnInit {
   }
 
   initMenuItems() {
-    this.menuItems.push(new MenuItem(faHandshake, 'AboutMe', '#first'));
-    this.menuItems.push(new MenuItem(faUserTie, 'WhatIDo', '#first'));
-    this.menuItems.push(new MenuItem(faLaptopCode, 'Skills', '#first'));
-    this.menuItems.push(new MenuItem(faGraduationCap, 'Experience', '#first'));
-    this.menuItems.push(new MenuItem(faFolderOpen, 'Portfolio', '#first'));
-    this.menuItems.push(new MenuItem(faMobileAlt, 'Contact', '#first'));
+    this.menuItems.push(new MenuItem(faHandshake, 'AboutMe', ['about-me']));
+    this.menuItems.push(new MenuItem(faUserTie, 'WhatIDo', ['what-i-do']));
+    this.menuItems.push(new MenuItem(faLaptopCode, 'Skills', ['skills']));
+    this.menuItems.push(new MenuItem(faGraduationCap, 'Experience', ['experience']));
+    this.menuItems.push(new MenuItem(faFolderOpen, 'Portfolio', ['portfolio']));
+    this.menuItems.push(new MenuItem(faMobileAlt, 'Contact', ['contact-me']));
   }
 
   showMenuMobile(e: any) {

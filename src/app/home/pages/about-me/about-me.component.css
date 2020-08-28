@@ -1,0 +1,37 @@
+.bubble-dialog {
+    border-top: 0px;
+    border-radius: 20px 20px 20px 0px;
+    padding: 5px;
+    background: var(--color-primary);
+    width: 110px;
+}
+
+.border-gradient-image {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
+    /* background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); */
+    padding: 10px;
+    float: right;
+    border-radius: 50%;
+}
+
+.border-gradient-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 20px solid var(--dark-primary);
+}
+
+.badges-technologies .badge-dark {
+    padding: 3px 6px;
+    border-radius: 5px;
+    background: var(--dark-primary);
+}
+
+.badges-technologies .border-badge {
+    padding: 2px;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
+    /* background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); */
+}
