@@ -5,5 +5,9 @@
     "Skills": "Habilidades",
     "Experience": "Experiencia",
     "Portfolio": "Portafolio",
-    "Contact": "Contacto"
+    "Contact": "Contacto",
+    "Im": "Hola, soy",
+    "WebDeveloper": "Desarrolladora Web",
+    "AboutMe": "Acerca de mí",
+    "AboutMeText": "Soy Licenciada en computación, me he dedicado principalmente al desarrollo de aplicaciones web, participando en etapas de análisis del proyecto, implementación de la base de datos, desarrollo del backend y desarrollo del frontend con tecnologías actuales y siguiendo las buenas prácticas que cada lenguaje posee. Me considero una persona capaz de afrontar nuevos retos, de aprender nuevas tecnologías y de integrarme paralograr un trabajo en equipo productivo"
 }

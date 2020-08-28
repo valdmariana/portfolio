@@ -4,45 +4,14 @@
             <input class="menu-btn d-none" type="checkbox" id="menu-btn" (change)="showMenuMobile($event)" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         </div>
-
         <div class="navbar-options" [ngClass]="{'show-mobile':showMobile,'no-show-mobile':!showMobile}">
-            <a href="#first" class="position-relative">
-                <fa-icon [icon]="faHandshake"></fa-icon>
+            <a [href]="item.route" class="position-relative" *ngFor="let item of menuItems"
+                [ngClass]="{'show-item':showItem,'no-show-item':!showItem}">
+                <fa-icon [icon]="item.icon"></fa-icon>
                 <div class="position-absolute text-nav text-center w-100">
-                    {{'AboutMe' | translate}}
-                </div>
-            </a>
-            <a href="#third" class="position-relative">
-                <fa-icon [icon]="faUserTie"></fa-icon>
-                <div class="position-absolute text-nav text-center w-100">
-                    {{'WhatIDo' | translate}}
-                </div>
-            </a>
-            <a href="#fourth" class="position-relative">
-                <fa-icon [icon]="faLaptopCode"></fa-icon>
-                <div class="position-absolute text-nav text-center w-100">
-                    {{'Skills' | translate}}
-                </div>
-            </a>
-            <a href="#fifth" class="position-relative">
-                <fa-icon [icon]="faGraduationCap"></fa-icon>
-                <div class="position-absolute text-nav text-center w-100">
-                    {{'Experience' | translate}}
-                </div>
-            </a>
-            <a href="#six" class="position-relative">
-                <fa-icon [icon]="faFolderOpen"></fa-icon>
-                <div class="position-absolute text-nav text-center w-100">
-                    {{'Portfolio' | translate}}
-                </div>
-            </a>
-            <a href="#seven" class="position-relative">
-                <fa-icon [icon]="faMobileAlt"></fa-icon>
-                <div class="position-absolute text-nav text-center w-100">
-                    {{'Contact' | translate}}
+                    {{item.title | translate}}
                 </div>
             </a>
         </div>
-
     </nav>
 </header>

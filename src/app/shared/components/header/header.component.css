@@ -1,6 +1,7 @@
 nav {
     position: fixed;
     left: 0;
+    top: 0;
     z-index: 50;
     display: flex;
     justify-content: space-around;
@@ -20,46 +21,23 @@ nav .navbar-options {
     height: 100%;
     background: var(--dark-secondary);
     justify-content: space-around;
-    flex-direction: column;
     display: flex;
-    transition: 1s;
+    flex-wrap: wrap;
+    transition: height 0.7s ease-in-out;
 }
 
-@media (max-width: 767px) {
-    nav .navbar-options {
-        width: 100%;
-        position: fixed;
-        top: 50px;
-    }
-    .navbar-options.no-show-mobile {
-        height: 10%;
-        display: none!important;
-    }
-    .navbar-options.show-mobile {
-        display: flex;
-        height: 100%!important;
-        flex-wrap: wrap;
-        flex-direction: row!important;
-    }
-    nav a {
-        width: 33.333333%;
-    }
-}
-
-@media (max-width: 575px) {
-    nav a {
-        width: 50%;
-    }
-}
-
-nav a {
-    color: #fff;
+.navbar-options a {
+    color: #cdcdcd;
     text-decoration: none;
     padding: 20px;
     text-align: center;
 }
 
-nav a:hover .text-nav {
+.navbar-options a:hover {
+    color: #fff;
+}
+
+.navbar-options a:hover .text-nav {
     opacity: 1;
     transform: translateY(75px);
     -webkit-transform: translateY(75px);
@@ -78,6 +56,49 @@ a .text-nav {
 
 a fa-icon {
     font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    nav .navbar-options {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    nav .navbar-options {
+        width: 100%;
+        position: fixed;
+        top: 50px;
+    }
+    .navbar-options.no-show-mobile {
+        height: 0%!important;
+    }
+    a.no-show-item {
+        display: none;
+    }
+    .navbar-options.show-mobile {
+        display: flex;
+        height: 100%!important;
+        flex-wrap: wrap;
+        flex-direction: row!important;
+    }
+    a.show-item {
+        display: block;
+    }
+    a .text-nav {
+        opacity: 1;
+        transform: translateY(75px);
+        -webkit-transform: translateY(75px);
+    }
+    nav a {
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 575px) {
+    nav a {
+        width: 50%;
+    }
 }
 
 /* menu icon */

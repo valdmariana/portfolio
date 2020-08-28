@@ -9,13 +9,18 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [PresentationComponent, AboutMeComponent, WhatIDoComponent, SkillsComponent, ExperienceComponent, PortfolioComponent, ContactMeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
+  ],
+  exports: [
+    SharedModule
   ]
 })
 export class HomeModule { }

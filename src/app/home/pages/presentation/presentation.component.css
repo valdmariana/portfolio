@@ -1,0 +1,41 @@
+.bubble-dialog {
+    border-top: 0px;
+    border-radius: 20px 20px 0px 20px;
+    padding: 10px;
+    background: var(--color-primary);
+}
+
+.bubble-dialog:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-top-color: var(--color-primary);
+    border-bottom: 0;
+    border-right: 0.7px solid var(--color-primary);
+    margin-left: -8px;
+    margin-bottom: -20px;
+}
+
+.bubble-dialog:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -27px;
+    right: -10px;
+    width: 38px;
+    height: 30px;
+    background: #fff0;
+    border-top-right-radius: 124px 88px;
+    border-top: solid var(--color-primary) 6px;
+    -webkit-transform: translate(-25px, -3px);
+    -moz-transform: translate(-25px, -3px);
+    -ms-transform: translate(-25px, -3px);
+    -o-transform: translate(-25px, -3px);
+    transform: translate(-25px, -3px);
+    -webkit-border-top-right-radius: 124px 88px;
+    -moz-border-radius-top-right: 124px 88px;
+}

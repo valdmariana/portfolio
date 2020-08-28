@@ -4,10 +4,23 @@
 :root {
     --dark-primary: #100e17;
     --dark-secondary: #202026;
-    --turquoise-primary: #4ABDAC;
+    --color-primary: #4ABDAC;
+    /* --color-primary: #F58053; Naranja*/
+    /* --color-primary: #E37222; Naranja */
+    /* --color-primary: #07889B; Teal */
+    /* --color-primary: #3E979B;Turquesa */
 }
 
 body {
     background-color: var(--dark-primary);
-    font-family: 'Inconsolata-Regular';
+    font-family: 'Roboto-Regular';
+    color: #fff;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inconsolata-Bold';
 }
