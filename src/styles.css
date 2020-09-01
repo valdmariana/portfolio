@@ -12,9 +12,19 @@
     /* --color-primary: #3E979B;Turquesa */
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    /* height: 100%;
+    overflow: auto; */
     background-color: var(--dark-primary);
-    font-family: 'Inconsolata-Regular';
+    /* background-image: url(./assets/images/background.png);
+    background-size: 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat; */
+    font-family: 'Raleway-Regular';
     color: #fff;
 }
 
@@ -31,12 +41,20 @@ body {
 
 /* Texts */
 
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
 h1, h2, h3 {
-    font-family: 'Roboto-Bold';
+    font-family: 'Raleway-Bold';
 }
 
 h4, h5, h6 {
-    font-family: 'Roboto-Regular';
+    font-family: 'Raleway-Regular';
 }
 
 @media (max-width: 575px) {
@@ -71,10 +89,47 @@ h4, h5, h6 {
 
 /* Buttons */
 
-.btn-main {
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    padding: 8px 10px;
     color: #fff;
-    font-weight: bold;
-    /* background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); */
-    background: linear-gradient(to right, var(--color-primary), var(--color-primary));
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a.animated-button.btn-main {
+    border: 2px solid var(--color-secondary);
+}
+
+a.animated-button.btn-main:after {
+    background: var(--color-secondary);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
 }

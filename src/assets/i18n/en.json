@@ -9,6 +9,12 @@
     "Im": "Hello, I'm",
     "WebDeveloper": "Web Developer",
     "AboutMeText": "About Me Text",
+    "AboutMeText2": "About Me Text",
     "DownloadCV": "Download CV",
-    "Databases": "Databases"
+    "Databases": "Databases",
+    "FrontendDescripcion": "Me enfoco en desarrollar aplicaciones web usables y atractivas al usuario porque sigo las mejores prácticas de programación en cuanto a diseño responsive y moderno",
+    "BackendDescription": "Utilizo las tecnologías y métodos adecuados para obtener como resultado una aplicación rápida que sin duda se refleja en la eficiencia en los procesos ejecutados",
+    "DatabasesDescription": "Conozco y tengo dominio de diferentes tipos de bases de datos, llegando a diseñar e implementar un modelo de datos que se adecúe a las necesidades del negocio",
+    "TechnicallSkills": "Tecnhicall skills",
+    "SoftSkills": "Soft skills"
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-me',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
-
-  constructor() { }
+  title: string = "";
+  constructor(
+    private translate: TranslateService) {
+    this.translate.get('AboutMe').subscribe((data: any) => {
+      this.title = data;
+    });
+  }
 
   ngOnInit() {
   }

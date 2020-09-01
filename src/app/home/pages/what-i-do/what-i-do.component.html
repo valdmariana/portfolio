@@ -1,31 +1,48 @@
 <div class="content">
+    <app-header-section [title]="title" *ngIf="title"></app-header-section>
     <div class="row">
-        <div class="col-12 text-center">
-            <h3>{{'WhatIDo'|translate}}</h3>
-            <h6>{{'WhatIDoText'|translate}}</h6>
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="face face1">
+                    <div class="content-box">
+                        <img src="assets/images/web-page-icon.png">
+                        <h5 class="text-center mt-4">{{'Frontend'|translate}}</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-box">
+                        <p>{{'FrontendDescription'|translate}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="d-md-flex w-100">
-            <div class="cols">
-                <div class="box-info text-center">
-                    <h6 class="mb-4 mb-3 text-uppercase">FRONT-END</h6>
-                    <p>
-                        {{'FrontendDescripcion'|translate}}
-                    </p>
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="face face1">
+                    <div class="content-box">
+                        <img src="assets/images/server-icon.png">
+                        <h5 class="text-center mt-4">{{'Backend'|translate}}</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content-box">
+                        <p>{{'BackendDescription'|translate}}</p>
+                    </div>
                 </div>
             </div>
-            <div class="cols">
-                <div class="box-info text-center">
-                    <h6 class="mb-4 mb-3  text-uppercase">BACK-END</h6>
-                    {{'BackendDescription'|translate}}
+        </div>
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="face face1">
+                    <div class="content-box">
+                        <img src="assets/images/data-icon.png">
+                        <h5 class="text-center mt-4">{{'Databases'|translate}}</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="cols">
-                <div class="box-info text-center">
-                    <h6 class="mb-4 mb-3 text-uppercase">{{'Databases'|translate}}</h6>
-                    <p>
-                        {{'DatabasesDescription'|translate}}
-                    </p>
+                <div class="face face2">
+                    <div class="content-box">
+                        <p>{{'DatabasesDescription'|translate}}</p>
+                    </div>
                 </div>
             </div>
         </div>

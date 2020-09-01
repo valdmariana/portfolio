@@ -1,0 +1,15 @@
+hr {
+    background-color: var(--color-secondary);
+    height: 3px;
+    width: 10%;
+    margin-top: 5px;
+}
+
+div.title-section {
+    font-family: 'Raleway-Black';
+    font-size: calc(1.3em + 1.3vw);
+}
+
+div.title-section span {
+    cursor: default;
+}

@@ -1,0 +1,12 @@
+<div class="row header-section">
+    <div class="col-md-12 text-center">
+        <div class="color-primary title-section">
+            <span *ngFor="let letter of title.split('');let i=index" (mouseover)="animate(i)"
+                [@rubberBand]="rubberState[i]" (@rubberBand.done)="reset(i)" class="d-inline-block"
+                [ngClass]="{'mr-2':letter==' '}">
+                {{letter}}
+            </span>
+        </div>
+        <hr>
+    </div>
+</div>

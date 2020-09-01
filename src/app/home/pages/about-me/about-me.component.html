@@ -1,9 +1,12 @@
 <div class="content">
+
+    <app-header-section [title]="title" *ngIf="title"></app-header-section>
+
     <div class="row flex-md-row flex-column-reverse">
         <div class="col-12 col-md-7 offset-0 text-center text-md-left">
             <div class="bubble-dialog text-center mx-auto ml-md-0 mt-4 font-weight-bold">{{"Im"| translate}}</div>
             <div class="mt-4">
-                <h1>Mariana Valdespino</h1>
+                <h1><span class="color-primary">M</span>ariana <span class="color-secondary">V</span>aldespino</h1>
                 <h6>{{'WebDeveloper'|translate}}</h6>
                 <p class="text-justify">
                     {{'AboutMeText'|translate}}
@@ -26,8 +29,8 @@
                     <div class="badge-dark">Typescript</div>
                 </div>
             </div>
-            <div class="mt-4 text-center">
-                <button type="button" class="btn btn-main">{{'DownloadCV'|translate}}</button>
+            <div class="mt-4 text-center col-4 offset-4">
+                <a href="#" class="btn btn-sm animated-button btn-main">{{'DownloadCV'|translate}}</a>
             </div>
         </div>
         <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-5 offset-md-0">

@@ -8,13 +8,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { NotFound404Component } from './components/not-found404/not-found404.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { HeaderSectionComponent } from './components/header-section/header-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, NotFound404Component],
+  declarations: [FooterComponent, HeaderComponent, NotFound404Component, HeaderSectionComponent],
   imports: [
     CommonModule,
     FontAwesomeModule,
     RouterModule,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -28,7 +31,9 @@ import { RouterModule } from '@angular/router';
     TranslateModule,
     FontAwesomeModule,
     HeaderComponent,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    HeaderSectionComponent
   ]
 })
 export class SharedModule { }
