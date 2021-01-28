@@ -8,8 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AboutMeComponent implements OnInit {
   title: string = "";
-  constructor(
-    private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     this.translate.get('AboutMe').subscribe((data: any) => {
       this.title = data;
     });

@@ -19,9 +19,10 @@
 }
 
 .box-info:hover .face.face1 {
-    background: var(--color-secondary);
-    /* background: var(--color-primary); */
+    /* background: var(--color-secondary); */
+    background: var(--color-primary);
     transform: translateY(0px);
+    color: var(--dark-secondary);
 }
 
 .box-info .face.face1 img {

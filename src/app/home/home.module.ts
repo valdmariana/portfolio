@@ -9,10 +9,12 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { SharedModule } from '../shared/shared.module';
+import { SkillRatingComponent } from './pages/skills/skill-rating/skill-rating.component';
+import { BadgeComponent } from './pages/skills/badge/badge.component';
 
 
 @NgModule({
-  declarations: [AboutMeComponent, WhatIDoComponent, SkillsComponent, ExperienceComponent, PortfolioComponent, ContactMeComponent],
+  declarations: [AboutMeComponent, WhatIDoComponent, SkillsComponent, ExperienceComponent, PortfolioComponent, ContactMeComponent, SkillRatingComponent, BadgeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

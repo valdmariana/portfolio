@@ -1,0 +1,9 @@
+<div>
+    <div class="badge" [class.flip-vertical-right]="mouseOvered" (mouseover)="mouseOvered=true"
+        (mouseout)="mouseOvered=false">
+        <div class="circle">
+            <fa-icon [icon]="iconBadge"></fa-icon>
+        </div>
+        <div class="ribbon">{{textBadge}}</div>
+    </div>
+</div>

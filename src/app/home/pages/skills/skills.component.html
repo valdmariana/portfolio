@@ -1,31 +1,76 @@
 <div class="content">
+    <app-header-section [title]="title" *ngIf="title"></app-header-section>
     <div class="row">
-        <div class="col-12 text-center">
-            <h3>{{'Skills'|translate}}</h3>
-            <h6>{{'WhatIDoText'|translate}}</h6>
+        <div class="col-md-12 flex-wrap d-flex justify-content-between">
+            <app-badge [iconBadge]="faUsers" [textBadge]="'Iniciator'"></app-badge>
+            <app-badge [iconBadge]="faBookReader" [textBadge]="'Iniciator'"></app-badge>
+            <app-badge [iconBadge]="faClipboardList" [textBadge]="'Iniciator'"></app-badge>
+            <app-badge [iconBadge]="faCalendarAlt" [textBadge]="'Iniciator'"></app-badge>
+            <app-badge [iconBadge]="faLightbulb" [textBadge]="'Iniciator'"></app-badge>
         </div>
-
-        <div class="col-md-6">
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <h4 class="text-center">{{'TechnicallSkills'|translate}}</h4>
             <div>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>Bootstrap 4</li>
-                    <li>Material Design</li>
-                    <li>Javascript</li>
-                    <li>JQuery</li>
-                    <li>Angular 4+</li>
-                    <li>React JS</li>
-                    <li>Laravel</li>
-                    <li>Node JS</li>
-                    <li>BBDD Relacionales (Mysql,PostgreSQL,Oracle)</li>
-                    <li>BBDD No Relacionales (MongoDB, Redis, Neo4J)</li>
+                <ul class="row list-unstyled">
+                    <li class="col-6 justify-content-center">
+                        <p class="mb-0">HTML5</p>
+                        <app-skill-rating [rating]="10"></app-skill-rating>
+                    </li>
+                    <li class="col-6 align-items-center d-flex flex-column">
+                        <div>
+                            <p class="mb-0">CSS</p>
+                            <app-skill-rating [rating]="8"></app-skill-rating>
+                        </div>
+
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0">Bootstrap 4</p>
+                        <app-skill-rating [rating]="10"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> Material Design</p>
+                        <app-skill-rating [rating]="10"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0">Javascript</p>
+                        <app-skill-rating [rating]="9"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0">Jquery</p>
+                        <app-skill-rating [rating]="10"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> Angular 4+</p>
+                        <app-skill-rating [rating]="10"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> React JS</p>
+                        <app-skill-rating [rating]="6"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> PHP</p>
+                        <app-skill-rating [rating]="9"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0">Laravel</p>
+                        <app-skill-rating [rating]="9"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> Node JS</p>
+                        <app-skill-rating [rating]="6"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> BBDD Relacionales (Mysql,PostgreSQL,Oracle)</p>
+                        <app-skill-rating [rating]="6"></app-skill-rating>
+                    </li>
+                    <li class="col-6">
+                        <p class="mb-0"> BBDD No Relacionales (MongoDB, Redis, Neo4J)</p>
+                        <app-skill-rating [rating]="6"></app-skill-rating>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <div class="col-md-6">
-            <h4 class="text-center">{{'SoftSkills'|translate}}</h4>
         </div>
     </div>
 </div>
