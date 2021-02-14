@@ -7,6 +7,7 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./badge.component.css']
 })
 export class BadgeComponent implements OnInit {
+  mouseOvered: boolean = false;
   @Input() iconBadge: IconDefinition;
   @Input() textBadge: string;
 

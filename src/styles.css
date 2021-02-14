@@ -49,6 +49,14 @@ body {
     color: var(--color-secondary);
 }
 
+.bg-primary {
+    background-color: var(--color-primary)!important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary)!important;
+}
+
 h1, h3, h5 {
     font-family: 'Raleway-Bold';
 }
