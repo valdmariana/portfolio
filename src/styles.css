@@ -57,6 +57,10 @@ body {
     background-color: var(--color-secondary)!important;
 }
 
+p {
+    font-family: 'Roboto-Regular';
+}
+
 h1, h3, h5 {
     font-family: 'Raleway-Bold';
 }

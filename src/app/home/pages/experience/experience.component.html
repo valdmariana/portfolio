@@ -1,1 +1,89 @@
-<p>experience works!</p>
+<div class="content">
+    <app-header-section [title]="title" *ngIf="title"></app-header-section>
+
+    <div class="timeline-border" [class]="selectedChild">
+        <div id="timeline">
+
+            <div class="tl-item" (mouseover)="selectedChild='item-1'" (mouseout)="selectedChild=''">
+                <div class="tl-bg" style="background-color: #ec4c5c"></div>
+                <div class="tl-year">
+                    <p class="font-weight-bold">2016</p>
+                </div>
+                <div class="tl-content">
+                    <p class="text-uppercase">PHD 2014 Consultores</p>
+                    <p>
+                        Pasante en tecnologías de la
+                        información: Aprendizaje de instalación,
+                        configuración y uso de herramientas Big
+                        Data
+                    </p>
+                </div>
+            </div>
+
+            <div class="tl-item" (mouseover)="selectedChild='item-2'" (mouseout)="selectedChild=''">
+                <div class="tl-bg" style="background-color: #4ABDAC"></div>
+                <div class="tl-year">
+                    <p class="font-weight-bold">2017</p>
+                </div>
+                <div class="tl-content">
+                    <p class="text-uppercase">Inv. Iconsolutions C.A</p>
+                    <p>
+                        Desarrolladora Fullstack: Desarrollo del
+                        frontend, backend y modelado y
+                        configuración de bases de datos
+                        relacionales para sistemas web a la
+                        medida
+                    </p>
+                </div>
+            </div>
+
+            <div class="tl-item" (mouseover)="selectedChild='item-3'" (mouseout)="selectedChild=''">
+                <div class="tl-bg" style="background-color: #FC9E4F"></div>
+                <div class="tl-year">
+                    <p class="font-weight-bold">2018</p>
+                </div>
+                <div class="tl-content">
+                    <p class="text-uppercase">Softech Consultores C.A</p>
+                    <p>
+                        Analista programador I: Analizar, diseñar
+                        y programar funcionalidades, clases y
+                        subsistemas del sistema Profit Plus 2kDoce
+                    </p>
+                </div>
+            </div>
+
+            <div class="tl-item" (mouseover)="selectedChild='item-4'" (mouseout)="selectedChild=''">
+                <div class="tl-bg" style="background-color: #3D348B"></div>
+                <div class="tl-year">
+                    <p class="font-weight-bold">2018</p>
+                </div>
+                <div class="tl-content">
+                    <p class="text-uppercase">Acorde 9S International C.A</p>
+                    <p>
+                        Desarrolladora FullStack: Desarrollo de
+                        aplicaciones web utilizando tecnologías
+                        y framework actuales: ReactJS, Angular
+                        4+,Laravel, Drupal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tl-item" (mouseover)="selectedChild='item-5'" (mouseout)="selectedChild=''">
+                <div class="tl-bg" style="background-color:#7B4B94"></div>
+                <div class="tl-year">
+                    <p class="font-weight-bold">2019</p>
+                </div>
+                <div class="tl-content">
+                    <p class="text-uppercase">Interfell Corporation</p>
+                    <p>
+                        Desarrolladora Front-end: Maquetación y
+                        desarrollo de aplicaciones web,
+                        haciendo uso principalmente del
+                        framework Angular 8-11, Bootstrap 4,
+                        Material Design
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
