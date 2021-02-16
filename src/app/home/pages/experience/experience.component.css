@@ -131,9 +131,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    .timeline-border {
+        margin-left: 0;
+    }
     #timeline {
         flex-direction: column;
-        margin-left: 0;
     }
     .tl-item {
         height: 130px;
