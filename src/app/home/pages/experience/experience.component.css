@@ -100,6 +100,14 @@
     filter: saturate(1);
 }
 
+.tl-logo {
+    position: absolute;
+    filter: brightness(0.5);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+}
+
 .tl-content {
     transform: translate3d(0, 0, 0) translateY(25px);
     position: relative;
@@ -108,6 +116,10 @@
     margin: 0 1.618em;
     top: 55%;
     opacity: 0;
+}
+
+.tl-content .text-description {
+    color: #c7c7c7;
 }
 
 .tl-year {

@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         deps: [HttpClient]
       }
     })
+
   ],
 
   exports: [
@@ -39,5 +40,5 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 export class SharedModule { }
 // AOT compilation support
 export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
