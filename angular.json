@@ -20,8 +20,8 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "favicon.ico",
-              "assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -84,8 +84,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "favicon.ico",
-              "assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -118,6 +118,10 @@
               "devServerTarget": "portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
