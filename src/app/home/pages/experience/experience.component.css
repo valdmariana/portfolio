@@ -83,6 +83,23 @@
     transition: all 0.75s ease 0.5s;
 }
 
+.wave-top {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wave-bottom {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(-1)
+}
+
 .tl-bg {
     transform: translate3d(0, 0, 0);
     position: absolute;
