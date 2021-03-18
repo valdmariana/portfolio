@@ -24,7 +24,8 @@
                                 placeholder="Your name">
                             <div
                                 [ngClass]="{'invisible':!(form.get('name').errors && (form.get('name').dirty || form.get('name').touched))}">
-                                <small [ngClass]="{'invisible': !form.get('name').errors.required}" class="text-danger">
+                                <small [ngClass]="{'invisible': form.get('name').errors?.required?false:true }"
+                                    class="text-danger">
                                     {{'RequiredField'|translate}}
                                 </small>
                             </div>
@@ -36,10 +37,10 @@
                                 required>
                             <div
                                 [ngClass]="{'invisible':!(form.get('email').errors && (form.get('email').dirty || form.get('email').touched))}">
-                                <small *ngIf="form.get('email').errors.required" class="text-danger">
+                                <small *ngIf="form.get('email').errors?.required?true:false" class="text-danger">
                                     {{'RequiredField'|translate}}
                                 </small>
-                                <small *ngIf="form.get('email').errors.email" class="text-danger">
+                                <small *ngIf="form.get('email').errors?.email?true:false" class="text-danger">
                                     {{'InvalidEmail'|translate}}
                                 </small>
                             </div>
@@ -53,7 +54,7 @@
                             <label> {{form.get('message').value?.length || 0}}/256</label>
                             <div
                                 [ngClass]="{'invisible':!(form.get('message').errors && (form.get('message').dirty || form.get('message').touched))}">
-                                <small [ngClass]="{'invisible': !form.get('message').errors.required}"
+                                <small [ngClass]="{'invisible': form.get('message').errors?.required?false:true}"
                                     class="text-danger">
                                     {{'RequiredField'|translate}}
                                 </small>

@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { faEnvelope, faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import { faMapMarkerAlt, faMobileAlt, faLightbulb as faLightbulbOn } from '@fortawesome/free-solid-svg-icons';

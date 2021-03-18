@@ -67,7 +67,8 @@
 }
 
 .form-control {
-    background-color: var(--color-primary);
+    background: rgb(136, 104, 107);
+    background: linear-gradient(90deg, rgba(136, 104, 107, 1) 14%, rgba(145, 168, 165, 1) 100%);
     filter: saturate(0.2);
     color: var(--dark-primary);
 }
