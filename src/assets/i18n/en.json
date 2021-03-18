@@ -5,7 +5,8 @@
     "Skills": "Skills",
     "Experience": "Experience",
     "Portfolio": "Portfolio",
-    "Contact": "Contact",
+    "ContactMe": "Contact Me",
+    "ContactText": "If you have any questions, suggestions or want to offer me a job opportunity, I will be happy to read you and answer you back.",
     "Im": "Hello, I'm",
     "WebDeveloper": "Web Developer",
     "AboutMeText": "About Me Text",
@@ -21,5 +22,8 @@
     "Autodidact": "Autodidact",
     "ProblemSolving": "Problem solving",
     "Flexibility": "Flexibility",
-    "CriticalThinking": "Critical thinking"
+    "CriticalThinking": "Critical thinking",
+    "Message": "Message",
+    "Name": "Name",
+    "Email": "Email"
 }

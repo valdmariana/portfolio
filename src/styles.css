@@ -57,6 +57,10 @@ body {
     background-color: var(--color-secondary)!important;
 }
 
+.bg-dark-secondary {
+    background-color: var(--dark-secondary)!important;
+}
+
 p {
     font-family: 'Roboto-Regular';
 }

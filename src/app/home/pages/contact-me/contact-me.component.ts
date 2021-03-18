@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-me',
@@ -7,9 +10,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
 
-  ngOnInit() {
+  title: string = "";
+  constructor(private translate: TranslateService, private http: HttpClient) {
+    this.translate.get('ContactMe').subscribe((data: any) => {
+      this.title = data;
+    });
   }
 
+  ngOnInit() {
+    this.initForm();
+  }
+
+  initForm() {
+    this.form = new FormGroup({
+      name: new FormControl("", Validators.required),
+      email: new FormControl("", [Validators.required, Validators.email]),
+      message: new FormControl("", Validators.required),
+      honeypot: new FormControl(""),
+    });
+  }
+
+  onSubmit() {
+    if (this.form.status == 'VALID' && this.form.get('honeypot').value == '') {
+      this.form.disable();
+      var formData: FormData = new FormData();
+      formData.append("name", this.form.get("name").value);
+      formData.append("email", this.form.get("email").value);
+      formData.append("message", this.form.get("message").value);
+      this.http.post("https://script.google.com/macros/s/AKfycbxAyqqbgw5h9oIk6abPXgp3a6VEtIQCN-wPQPjV/exec", formData).subscribe((response) => {
+        if (response["result"] == "success") {
+          console.log('exito')
+        } else {
+          console.log('fallo')
+        }
+        this.form.enable();
+        console.log(response);
+      });
+    }
+  }
+
+  change() {
+    console.log(this.form)
+  }
 }
