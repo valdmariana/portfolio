@@ -105,47 +105,31 @@ h2, h4, h6 {
 
 /* Buttons */
 
-a.animated-button:link:after, a.animated-button:visited:after {
-    content: "";
-    position: absolute;
-    height: 0%;
-    left: 50%;
-    top: 50%;
-    width: 150%;
-    z-index: -1;
-    -webkit-transition: all 0.75s ease 0s;
-    -moz-transition: all 0.75s ease 0s;
-    -o-transition: all 0.75s ease 0s;
-    transition: all 0.75s ease 0s;
-}
-
-a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
-    height: 450%;
-}
-
-a.animated-button:link, a.animated-button:visited {
-    position: relative;
-    display: block;
-    padding: 8px 10px;
+.btn-color-primary {
     color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    overflow: hidden;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
-a.animated-button.btn-main {
-    border: 2px solid var(--color-secondary);
+.btn-color-secondary {
+    color: #fff;
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
 }
 
-a.animated-button.btn-main:after {
-    background: var(--color-secondary);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+.btn-outline-color-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-outline-color-secondary {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: 0.5s;
+}
+
+.btn-outline-color-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
 }

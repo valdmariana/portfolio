@@ -6,7 +6,19 @@
     z-index: 0;
     position: absolute;
     top: 0;
+    transition: 1s;
     filter: saturate(0.2);
+}
+
+.div-right-vertical.lights-on {
+    filter: saturate(0.7);
+}
+
+.div-rrss {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .card-body {
@@ -18,19 +30,51 @@
     width: 100%;
     height: 300px;
     background-color: var(--color-primary);
+    color: var(--dark-primary);
+    transition: 1s;
     filter: saturate(0.2);
+}
+
+.div-info.lights-on {
+    filter: saturate(0.7);
+}
+
+.div-info .div-inner-info {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ec4c5c;
+    bottom: -25px;
+    left: -25px;
+    color: var(--dark-primary);
+    cursor: pointer;
+}
+
+.div-inner-info .ng-fa-icon {
+    transform: translateX(50%);
+    transition: 1s;
+    position: absolute;
+}
+
+.div-inner-info .bulb-on {
+    color: #fff;
+}
+
+.div-inner-info .bulb-off {
+    color: #3e3e3e
+}
+
+.div-inner-info:hover .bulb-off {
+    color: #fff;
 }
 
 .form-control {
-    /* border-radius: 0; */
-    /* border: 0; */
     background-color: var(--color-primary);
     filter: saturate(0.2);
-    color: #efefef;
+    color: var(--dark-primary);
 }
 
 .form-control:focus {
-    color: #efefef;
     background-color: var(--color-primary);
     filter: saturate(0.2);
     outline: 0;

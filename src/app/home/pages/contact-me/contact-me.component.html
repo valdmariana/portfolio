@@ -1,62 +1,92 @@
 <div class="content">
     <div class="card bg-dark-secondary">
         <div class="card-body">
-            <div class="div-right-vertical"></div>
+            <div class="div-rrss d-flex align-items-center justify-content-between p-4">
+                <button class="btn btn-sm btn-outline-color-primary mr-2">
+                    <fa-icon [icon]="faLinkedinIn"></fa-icon>
+                </button>
+                <button class="btn btn-sm btn-outline-color-primary mr-2">
+                    <fa-icon [icon]="faEnvelope"></fa-icon>
+                </button>
+                <button class="btn btn-sm btn-outline-color-primary mr-2">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                </button>
+            </div>
+            <div class="div-right-vertical" [ngClass]="{'lights-on':lightsOn}"></div>
             <app-header-section [title]="title" *ngIf="title"></app-header-section>
             <div class="row">
                 <div class="col-md-6 offset-md-1">
                     <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
                         <div class="form-group">
-                            <label>{{'Name'|translate}}</label>
+                            <label class="font-weight-bold">{{'Name'|translate}}</label>
                             <input formControlName="name" required class="form-control"
                                 [ngClass]="{'is-invalid': (form.get('name').errors && (form.get('name').dirty || form.get('name').touched))}"
-                                placeholder="Your name" (change)="change()">
+                                placeholder="Your name">
                             <div
-                                *ngIf="form.get('name').errors && (form.get('name').dirty || form.get('name').touched)">
-                                <small *ngIf="form.get('name').errors.required" class="text-danger">
-                                    Este campo es requerido
+                                [ngClass]="{'invisible':!(form.get('name').errors && (form.get('name').dirty || form.get('name').touched))}">
+                                <small [ngClass]="{'invisible': !form.get('name').errors.required}" class="text-danger">
+                                    {{'RequiredField'|translate}}
                                 </small>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>{{'Email'|translate}}</label>
+                            <label class="font-weight-bold">{{'Email'|translate}}</label>
                             <input class="form-control" formControlName="email" placeholder="email@example.com"
                                 [ngClass]="{'is-invalid': (form.get('email').errors && (form.get('email').dirty || form.get('email').touched))}"
                                 required>
                             <div
-                                *ngIf="form.get('email').errors && (form.get('email').dirty || form.get('email').touched)">
+                                [ngClass]="{'invisible':!(form.get('email').errors && (form.get('email').dirty || form.get('email').touched))}">
                                 <small *ngIf="form.get('email').errors.required" class="text-danger">
-                                    Este campo es requerido
+                                    {{'RequiredField'|translate}}
                                 </small>
                                 <small *ngIf="form.get('email').errors.email" class="text-danger">
-                                    El email no posee un formato válido
+                                    {{'InvalidEmail'|translate}}
                                 </small>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>{{'Message'|translate}}</label>
+                            <label class="font-weight-bold">{{'Message'|translate}}</label>
                             <textarea class="form-control" formControlName="message" maxlength="256"
                                 placeholder="Type your message here..." required
                                 [ngClass]="{'is-invalid': (form.get('message').errors && (form.get('message').dirty || form.get('message').touched))}">
                             </textarea>
-                            <p class="m-0"> {{form.get('message').value?.length || 0}}/256</p>
+                            <label> {{form.get('message').value?.length || 0}}/256</label>
                             <div
-                                *ngIf="form.get('message').errors && (form.get('message').dirty || form.get('message').touched)">
-                                <small *ngIf="form.get('message').errors.required" class="text-danger">
-                                    Este campo es requerido
+                                [ngClass]="{'invisible':!(form.get('message').errors && (form.get('message').dirty || form.get('message').touched))}">
+                                <small [ngClass]="{'invisible': !form.get('message').errors.required}"
+                                    class="text-danger">
+                                    {{'RequiredField'|translate}}
                                 </small>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-primary btn-color-secondary" type="submit">Enviar</button>
                         <input formControlName="honeypot" class="d-none" type="text" />
                     </form>
                 </div>
 
                 <div class="col-md-5 align-items-center d-flex">
-                    <div class="div-info p-4">
-                        <h6 class="Info"></h6>
-                        <div>
-
+                    <div class="div-info p-4" [ngClass]="{'lights-on':lightsOn}">
+                        <div class="div-inner-info d-flex align-items-center justify-content-between"
+                            (click)="lights()">
+                            <fa-icon [icon]="faLightbulb" size="2x" class="bulb-off" *ngIf="!lightsOn"></fa-icon>
+                            <fa-icon [icon]="faLightBulbOn" size="2x" class="bulb-on" *ngIf="lightsOn"></fa-icon>
+                        </div>
+                        <h5>Info</h5>
+                        <div class="p-3">
+                            <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+                            Venezuela
+                        </div>
+                        <div class="p-3">
+                            <fa-icon [icon]="faEnvelope"></fa-icon>
+                            marianavl96@gmail.com
+                        </div>
+                        <div class="p-3">
+                            <fa-icon [icon]="faMobileAlt"></fa-icon>
+                            +58 04120183625
+                        </div>
+                        <div class="p-3">
+                            <fa-icon [icon]="faWhatsapp"></fa-icon>
+                            +58 04241686324
                         </div>
                     </div>
                 </div>

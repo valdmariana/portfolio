@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { faEnvelope, faLightbulb } from '@fortawesome/free-regular-svg-icons';
+import { faMapMarkerAlt, faMobileAlt, faLightbulb as faLightbulbOn } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,8 +14,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class ContactMeComponent implements OnInit {
 
   form: FormGroup;
-
   title: string = "";
+  lightsOn: boolean = false;
+  faMapMarkerAlt = faMapMarkerAlt;
+  faEnvelope = faEnvelope;
+  faMobileAlt = faMobileAlt;
+  faWhatsapp = faWhatsapp;
+  faGithub = faGithub;
+  faLinkedinIn = faLinkedinIn;
+  faLightbulb = faLightbulb;
+  faLightBulbOn = faLightbulbOn;
+
   constructor(private translate: TranslateService, private http: HttpClient) {
     this.translate.get('ContactMe').subscribe((data: any) => {
       this.title = data;
@@ -51,7 +63,7 @@ export class ContactMeComponent implements OnInit {
     }
   }
 
-  change() {
-    console.log(this.form)
+  lights() {
+    this.lightsOn = !this.lightsOn;
   }
 }
