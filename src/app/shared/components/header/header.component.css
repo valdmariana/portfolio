@@ -60,6 +60,19 @@ a fa-icon {
 @media (min-width: 768px) {
     nav .navbar-options {
         flex-direction: column;
+        overflow-y: auto;
+    }
+    nav .navbar-options::-webkit-scrollbar {
+        width: 5px;
+    }
+    nav .navbar-options::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    nav .navbar-options::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+    }
+    nav .navbar-options::-webkit-scrollbar-thumb:hover {
+        background: var(--color-secondary);
     }
 }
 
