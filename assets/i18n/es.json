@@ -25,5 +25,7 @@
     "CriticalThinking": "Pensamiento crítico",
     "Message": "Mensaje",
     "Name": "Nombre",
-    "Email": "Correo electrónico"
+    "Email": "Correo electrónico",
+    "RequiredField": "El campo es obligatorio",
+    "InvalidEmail": "El correo eléctronico no posee un formato válido"
 }

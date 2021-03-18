@@ -25,5 +25,7 @@
     "CriticalThinking": "Critical thinking",
     "Message": "Message",
     "Name": "Name",
-    "Email": "Email"
+    "Email": "Email",
+    "RequiredField": "This field is required",
+    "InvalidEmail": "The email is invalid"
 }
