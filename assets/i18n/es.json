@@ -5,7 +5,8 @@
     "Skills": "Habilidades",
     "Experience": "Experiencia",
     "Portfolio": "Portafolio",
-    "Contact": "Contacto",
+    "ContactMe": "Contáctame",
+    "ContactText": "Si tienes alguna pregunta, sugerencia o quieres ofrecerme alguna oportunidad de trabajo, estaré feliz de leerte y responderte devuelta.",
     "Im": "Hola, soy",
     "WebDeveloper": "Desarrolladora Web",
     "AboutMeText2": "Soy Licenciada en computación, me dedico al desarrollo y personalización de aplicaciones web con tecnologías actuales. Soy una persona con ganas de aprender nuevas cosas cada día para enfrentar nuevos retos en el mundo de la programación. Estos son algunos de los lenguajes con los que he trabajado:",
@@ -21,5 +22,8 @@
     "Autodidact": "Autodidacta",
     "ProblemSolving": "Resolución de problemas",
     "Flexibility": "Flexibilidad",
-    "CriticalThinking": "Pensamiento crítico"
+    "CriticalThinking": "Pensamiento crítico",
+    "Message": "Mensaje",
+    "Name": "Nombre",
+    "Email": "Correo electrónico"
 }
