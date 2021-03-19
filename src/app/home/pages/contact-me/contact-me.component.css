@@ -43,14 +43,15 @@
     width: 50px;
     height: 50px;
     background: #ec4c5c;
-    bottom: -25px;
-    left: -25px;
+    bottom: 0px;
+    left: 0px;
     color: var(--dark-primary);
     cursor: pointer;
 }
 
 .div-inner-info .ng-fa-icon {
-    transform: translateX(50%);
+    transform: translateX(-50%);
+    left: 50%;
     transition: 1s;
     position: absolute;
 }
