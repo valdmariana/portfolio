@@ -1,3 +1,8 @@
+.card {
+    max-width: 768px;
+    margin: auto;
+}
+
 .div-right {
     width: 20%;
     height: 100%;
@@ -32,6 +37,8 @@
     transition: 1s;
     filter: saturate(0.2);
     margin-top: -75px;
+    left: 30px;
+    position: absolute;
 }
 
 .div-info.lights-on {
@@ -42,31 +49,29 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background: #ec4c5c;
-    bottom: 0px;
-    left: 0px;
+    top: 0px;
+    right: 10px;
     color: var(--dark-primary);
-    cursor: pointer;
 }
 
 .div-inner-info .ng-fa-icon {
-    transform: translateX(-50%);
-    left: 50%;
-    transition: 1s;
-    position: absolute;
+    position: relative;
+    top: 4px;
 }
 
 .div-inner-info .bulb-on {
     color: #fff;
+    right: 30px;
 }
 
 .div-inner-info .bulb-off {
-    color: #3e3e3e
+    color: #3e3e3e;
+    left: -10px;
 }
 
-.div-inner-info:hover .bulb-off {
+/* .div-inner-info:hover .bulb-off {
     color: #fff;
-}
+} */
 
 .form-control {
     background: rgb(136, 104, 107);
@@ -84,4 +89,24 @@
 
 ::placeholder {
     color: #efefef;
+}
+
+.custom-switch.custom-switch-md .custom-control-label::before {
+    height: 25px;
+    width: 50px;
+    border-radius: 3rem;
+    border-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+.custom-switch.custom-switch-md .custom-control-label::after {
+    width: 15px;
+    height: 15px;
+    transition: 0.7s;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.custom-switch.custom-switch-md .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(28px);
 }

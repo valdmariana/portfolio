@@ -10,7 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { HeaderSectionComponent } from './components/header-section/header-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [FooterComponent, HeaderComponent, NotFound404Component, HeaderSectionComponent],
@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -39,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HeaderSectionComponent,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

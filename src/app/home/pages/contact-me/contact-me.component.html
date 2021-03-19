@@ -67,10 +67,17 @@
 
                 <div class="col-md-5 align-items-center d-flex">
                     <div class="div-info p-4" [ngClass]="{'lights-on':lightsOn}">
-                        <div class="div-inner-info d-flex align-items-center justify-content-between"
-                            (click)="lights()">
-                            <fa-icon [icon]="faLightbulb" size="2x" class="bulb-off" *ngIf="!lightsOn"></fa-icon>
-                            <fa-icon [icon]="faLightBulbOn" size="2x" class="bulb-on" *ngIf="lightsOn"></fa-icon>
+                        <div class="div-inner-info d-flex align-items-center justify-content-between">
+                            <div class="custom-control custom-switch custom-switch-md">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1"
+                                    [(ngModel)]="lightsOn">
+                                <label class="custom-control-label" for="customSwitch1">
+                                    <fa-icon [icon]="faLightbulb" class="fa-md bulb-off" *ngIf="!lightsOn">
+                                    </fa-icon>
+                                    <fa-icon [icon]="faLightBulbOn" class="fa-md bulb-on" *ngIf="lightsOn">
+                                    </fa-icon>
+                                </label>
+                            </div>
                         </div>
                         <h5>Info</h5>
                         <div class="p-3 ml-3">
