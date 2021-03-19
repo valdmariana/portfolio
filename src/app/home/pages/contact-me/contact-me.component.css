@@ -37,8 +37,8 @@
     transition: 1s;
     filter: saturate(0.2);
     margin-top: -75px;
-    left: 30px;
-    position: absolute;
+    /* left: 30px;
+    position: absolute; */
 }
 
 .div-info.lights-on {
